@@ -1,0 +1,433 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  background-color: #121212 !important;
+}
+
+img {
+  max-width: 100%;
+}
+section {
+  display: flex;
+}
+:root {
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #b3b3b3;
+  --highlighted-text-color: #1db954;
+}
+
+.sidebar {
+  background-color: #000000;
+  max-width: 400px;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.sidebar__home {
+  color: rgb(176, 176, 176);
+  padding: 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.sidebar__home span {
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin-left: 25px;
+}
+.sidebar__home p {
+  margin-bottom: 20px;
+  transition: color 0.5s ease-in-out;
+}
+.sidebar__home p:hover {
+  color: rgb(254, 245, 245);
+}
+
+.sidebar__bibliothek {
+  color: rgb(176, 176, 176);
+  padding: 10px 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.sidebar__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar__bibliothek span {
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin-left: 25px;
+}
+.sidebar__bibliothek p {
+  transition: color 0.5s ease-in-out;
+}
+.sidebar__bibliothek p:hover {
+  color: rgb(254, 245, 245);
+}
+.sidebar__bibliothek i:hover {
+  color: rgb(254, 245, 245);
+}
+
+.sidebar__buttons {
+  color: rgb(176, 176, 176);
+  padding: 30px 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.sidebar__buttons a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: rgb(176, 176, 176);
+  background-color: #333;
+  padding: 5px 8px;
+  border-radius: 10px;
+  margin-right: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.sidebar__buttons a:hover {
+  opacity: 0.9;
+  color: rgb(254, 245, 245);
+}
+.sidebar__search {
+  color: rgb(176, 176, 176);
+  padding: 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.sidebar__search span {
+  font-weight: bolder;
+}
+.sidebar__search i {
+  font-size: 0.9rem;
+}
+.sidebar__search span {
+  font-size: 0.7rem;
+  margin-right: 5px;
+}
+
+.sidebar__songs {
+  color: rgb(176, 176, 176);
+  padding: 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.sidebar__songs img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.sidebar__songs-flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.sidebar__songs-desc h3 {
+  font-weight: bolder;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: white;
+}
+.sidebar__songs-desc p {
+  font-size: 0.7rem;
+}
+.sidebar__songs-flex:hover {
+  background: #333;
+  border-radius: 10px;
+}
+
+/* Main Menu */
+.main {
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-left: 10px;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.main__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.main__top .fa-chevron-left {
+  color: rgb(176, 176, 176);
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 5px 10px;
+  transition: color 0.5s ease-in-out;
+}
+
+.main__top .fa-chevron-left:hover {
+  color: #fff;
+}
+
+.main__top-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__top-right p {
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+.main__top-right p:hover {
+  transform: scale(1.1);
+}
+.main__top-right .fa-arrow-down {
+  color: black;
+  background-color: white;
+  padding: 3px 6px;
+  font-size: 0.8rem;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.main__top-right span {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.main__top-right .fa-bell {
+  color: rgb(176, 176, 176);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.main__top-right .fa-bell:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+.main__top-right img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.main__flex {
+  color: rgb(176, 176, 176);
+  padding: 50px 30px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__flex a {
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: text-decoration 0.5s ease-in-out;
+}
+.main__flex a:hover {
+  text-decoration: underline;
+}
+.main__flex-right {
+  font-size: 0.8rem !important;
+  color: gray !important;
+  font-weight: bold !important;
+  transition: text-decoration 0.5s ease-in-out;
+}
+
+.main__cards {
+  display: grid;
+  gap: 20px; /* Kartlar arasındaki boşluk */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Kartların minimum genişliğini 200px olarak ayarla */
+}
+
+.main__card {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  min-width: 250px; /* Kartların minimum genişliği */
+}
+
+.main__card:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.main__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main__card .img-text {
+  position: absolute;
+  left: 30px;
+  bottom: 100px;
+  color: #fff;
+  font-size: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Arka planı yarı saydam yap */
+  padding: 5px;
+}
+.main__card-body h3 {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+}
+.main__card-body p {
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: gray;
+}
+
+.card-radius {
+  border-radius: 50%;
+  width: 150px !important;
+  height: 150px !important;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+
+/* icon card move */
+
+/* icon card move */
+.icon {
+  position: absolute;
+  right: 50px;
+  bottom: 90px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.icon i {
+  color: #fff;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(2, 180, 2);
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+
+.icon i:hover {
+  transform: scale(1.1);
+}
+
+.main__card:hover .icon {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* icon singers */
+.icon-singers {
+  position: absolute;
+  right: 85px;
+  bottom: 90px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.icon-singers i {
+  color: #fff;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(2, 180, 2);
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+
+.icon-singers i:hover {
+  transform: scale(1.1);
+}
+
+.main__card:hover .icon-singers {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 1750px) {
+  .icon-singers {
+    position: absolute;
+    right: 95px;
+    bottom: 90px;
+  }
+}
+
+@media (max-width: 776px) {
+  .sidebar__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .sidebar__flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar__flex .search {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .sidebar__flex p {
+    display: flex;
+  }
+  .sidebar__flex .bars {
+    margin-top: 1.1px;
+    padding-left: 10px;
+  }
+
+  .sidebar__bibliothek .sidebar__flex p {
+    display: flex;
+  }
+  .sidebar__bibliothek .sidebar__flex i {
+    display: none;
+  }
+  .dynamic-content {
+    padding-right: 25px;
+  }
+  .icon-singers {
+    position: absolute;
+    right: 75px;
+    bottom: 100px;
+  }
+}
